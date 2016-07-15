@@ -1,0 +1,23 @@
+<div class="container">
+
+<h1>Usuarios</h1>
+ 
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+  </tr>
+ 
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= link_to '  Show', article_path(article) %></td>
+    </tr>
+  <% end %>
+
+  <%= link_to 'New User', new_article_path %>
+
+</table>
+
+</div>
