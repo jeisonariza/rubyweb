@@ -4,7 +4,7 @@
     <div id="error_explanation">
       <h2>
         <%= pluralize(@article.errors.count, "error") %> prohibited
-        this article from being saved:
+        this Profile from being saved:
       </h2>
       <ul>
         <% @article.errors.full_messages.each do |msg| %>
@@ -13,26 +13,34 @@
       </ul>
     </div>
   <% end %>
- 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
- 
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
 
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
-  
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
+<div class= "form-group">
+  <div class= "field">
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_area :name, :class => 'form-control' %>
+    </p>
+  </div> 
+</div>
+
+<div class= "form-group">
+  <div class= "field">
+    <p>
+      <%= f.label :phone %><br>
+      <%= f.text_area :phone, :class => 'form-control' %>
+    </p>
+  </div> 
+</div>
+
+<div class= "form-group">
+  <div class= "field">
+    <p>
+      <%= f.label :email %><br>
+      <%= f.text_area :email, :class => 'form-control' %>
+    </p> 
+  </div> 
+</div>
+
 
   <p>
     <%= f.submit %>

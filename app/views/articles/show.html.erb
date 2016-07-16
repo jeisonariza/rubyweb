@@ -1,14 +1,22 @@
 <div class="container">
+
 	<p>
 	  <strong>Name:</strong>
-	  <%= @article.title %>
-	</p>
-	 
-	<p>
-	  <strong>Phone Number:</strong>
-	  <%= @article.text %>
+	  <%= @article.name %>
 	</p>
 
+	<p>
+	  <strong>Phone Number:</strong>
+	  <%= @article.phone %>
+	</p>
+
+	<p>
+	  <strong>email:</strong>
+	  <%= @article.email %>
+	</p>
+	
+
 	<%= link_to 'Edit', edit_article_path(@article) %>
+	<br>
 	<%= link_to 'Back', articles_path %>
 </div>
