@@ -17,8 +17,8 @@
 <div class= "form-group">
   <div class= "field">
     <p>
-      <%= f.label :name %><br>
-      <%= f.text_area :name, :class => 'form-control' %>
+      <%= f.label :name  %><br>
+      <%= f.text_field :name, :class => 'form-control', :placeholder => "Profile Name " %>
     </p>
   </div> 
 </div>
@@ -27,7 +27,7 @@
   <div class= "field">
     <p>
       <%= f.label :phone %><br>
-      <%= f.text_area :phone, :class => 'form-control' %>
+      <%= f.text_field :phone, :class => 'form-control', :placeholder => "Profile Phone" %>
     </p>
   </div> 
 </div>
@@ -36,14 +36,14 @@
   <div class= "field">
     <p>
       <%= f.label :email %><br>
-      <%= f.text_area :email, :class => 'form-control' %>
+      <%= f.text_field :email, :class => 'form-control', :placeholder => "Profile Email" %>
     </p> 
   </div> 
 </div>
 
 
   <p>
-    <%= f.submit %>
+    <%= f.submit "Create Profile", :class => "btn btn-primary" %>
   </p>
  
 <% end %>
