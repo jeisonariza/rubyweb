@@ -3,7 +3,7 @@
 <h1>Profiles</h1>
 <br>
 
-<%= link_to 'New Profile', new_article_path %>
+<%= link_to 'New Profile',  new_article_path %>
 <br>
 
 <table>
@@ -19,8 +19,8 @@
       <td><%= article.name %></td>
       <td><%= article.phone %></td>
       <td><%= article.email %></td>
-      <td><%= link_to '  Show   ', article_path(article) %></td>
-      <td><%=link_to '  Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+      <td><%=link_to 'Edit', edit_article_path(article) %></td>
       <td><%= link_to 'Destroy', article_path(article),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
